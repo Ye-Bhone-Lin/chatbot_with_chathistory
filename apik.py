@@ -57,13 +57,15 @@ def gemini_output_answer(user_input: str) -> str:
     return message1['answer']
 
 
+genre = st.radio(
+    "Choose model",
+    ["LLAMA","GEMINI"])
+
 user_input = st.chat_input('Enter the message')
 
-tab1, tab2 = st.tabs(["LLAMA", "GEMINI"])
 
 
-
-with tab1:
+if genre == "LLAMA":
     if user_input:
         if "messages" not in st.session_state:
             st.session_state.messages = []
@@ -83,7 +85,7 @@ with tab1:
             st.session_state.messages.append({"role": "assistant", "content": answer})
             st.write(answer)
 
-with tab2:
+else:
     if user_input:
         if "messages" not in st.session_state:
             st.session_state.messages = []
