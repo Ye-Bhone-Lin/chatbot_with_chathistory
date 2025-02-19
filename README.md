@@ -3,13 +3,18 @@ This is a chatbot implementation that retains chat history, allowing it to maint
 
 ### Features
 • Chatbot with memory to retain previous messages
+
 • API endpoint for interaction
+
 • Demo file (apik.py) to showcase chatbot functionality
+
 • Easy-to-use structure for further customization
 
 ### Installation
+
 #### Prerequisites
 • Python 3.11
+
 • Required dependencies listed in "requirements.txt"
 
 ### File Structure
