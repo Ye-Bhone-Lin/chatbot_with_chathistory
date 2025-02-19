@@ -19,9 +19,13 @@ This is a chatbot implementation that retains chat history, allowing it to maint
 
 ### File Structure
 chatbot_with_chathistory/
+
 │-- apik.py             # Demo API file
+
 │-- requirements.txt    # Required dependencies
+
 │-- README.md           # Project documentation (this file)
+
 │-- function_bot.py     # Using RAG
 
 ### License
